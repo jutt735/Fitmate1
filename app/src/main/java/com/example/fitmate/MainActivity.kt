@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
 
 
         button2.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+          val intent = Intent(this,MainActivity2::class.java)
+           //val intent = Intent(this,Shoulder_WorkOut::class.java)
             startActivity(intent)
         }
     }

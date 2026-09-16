@@ -18,6 +18,7 @@
           android:textSize="30sp"
           android:layout_centerHorizontal="true"
           android:text="WORKOUT"
+          android:textColor="@color/Orange"
           android:textStyle="bold"/>
 
       <ScrollView
@@ -116,6 +117,18 @@
                   android:layout_marginTop="16dp"
                   android:src="@drawable/legsworkout"
                  />
+
+              <ImageView
+                  android:id="@+id/imageView1000"
+                  android:layout_width="349dp"
+                  android:layout_height="198dp"
+                  android:layout_marginStart="4dp"
+                  android:layout_marginBottom="2dp"
+                  android:layout_alignParentStart="true"
+                  android:clickable="true"
+                  android:layout_marginTop="16dp"
+                  android:src="@drawable/cardiio_workout"
+                  />
 
 
 

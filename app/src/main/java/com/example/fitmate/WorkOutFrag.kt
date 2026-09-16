@@ -66,28 +66,33 @@ class WorkOutFrag : Fragment() {
         val tricep: ImageView =lay.findViewById(R.id.imageView74)
         val abs: ImageView =lay.findViewById(R.id.imageView75)
         val leg: ImageView =lay.findViewById(R.id.imageView76)
+        val cardiio:ImageView=lay.findViewById(R.id.imageView1000)
 
         chest.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,ChestWorkOut::class.java))
         }
 
         back.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,BackWorkOut::class.java))
         }
         shoulder.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,Shoulder_WorkOut::class.java))
         }
         bicep.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,Biceps_WorkOut::class.java))
         }
         tricep.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,Triceps_Workout::class.java))
         }
         abs.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,Abs_Workout::class.java))
         }
         leg.setOnClickListener{
-            startActivity(Intent(activity,MainActivity::class.java))
+            startActivity(Intent(activity,Legs_Workout::class.java))
+        }
+
+        cardiio.setOnClickListener{
+            startActivity(Intent(activity,CArdio_workout::class.java))
         }
 
         return lay

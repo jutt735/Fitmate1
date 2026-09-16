@@ -1,10 +1,14 @@
 package com.example.fitmate
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +38,41 @@ class BmiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bmi, container, false)
+        val lay= inflater.inflate(R.layout.fragment_bmi, container, false)
+
+        val bmi_button:Button=lay.findViewById(R.id.button3)
+        val diet:TextView=lay.findViewById(R.id.textView8)
+        val health:TextView=lay.findViewById(R.id.textView10)
+        val Wate:TextView=lay.findViewById(R.id.textView9)
+        val bmr_button:Button=lay.findViewById(R.id.button4)
+
+        val td:ImageView=lay.findViewById(R.id.imageView22)
+
+        bmi_button.setOnClickListener{
+            startActivity(Intent(activity,BMI_Main::class.java))
+        }
+        bmr_button.setOnClickListener{
+            startActivity(Intent(activity,BMR_MAIN::class.java))
+        }
+
+            Wate.setOnClickListener{
+            startActivity(Intent(activity,Water_Intake::class.java))
+        }
+        health.setOnClickListener{
+            startActivity(Intent(activity,healthy_habits::class.java))
+        }
+        diet.setOnClickListener{
+            startActivity(Intent(activity,diet_plan::class.java))
+
+        }
+
+        td.setOnClickListener{
+            startActivity(Intent(activity,TEEDEE_MAIN::class.java))
+
+        }
+
+
+        return lay
     }
 
     companion object {

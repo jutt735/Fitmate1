@@ -40,7 +40,7 @@
                 android:layout_height="34dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="12dp"
-                android:background="@color/black"
+                android:background="#0F0F0F"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/bell" />

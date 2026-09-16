@@ -45,10 +45,29 @@
             android:layout_marginEnd="24dp"
             android:scaleType="fitXY"
             android:backgroundTint="@color/black"
-            android:src="@drawable/chestworkout" />
+            android:src="@drawable/abs" />
 
+        <ImageButton
+            android:id="@+id/flip3rd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/back" />
 
-
+        <ImageButton
+            android:id="@+id/flip4th"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="24dp"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ectual_biceps_pic" />
 
 
 
@@ -86,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Diet Plan"
+                android:clickable="true"
                 android:textAlignment="center"
                 android:textColor="#FF9800" />
         </LinearLayout>
@@ -107,6 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:clickable="true"
                 android:text="Water Intake"
                 android:textAlignment="center"
                 android:textColor="#FF9800" />
@@ -130,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Daily Habits"
+                android:clickable="true"
                 android:textAlignment="center"
                 android:textColor="#FF9800" />
         </LinearLayout>
@@ -200,6 +222,7 @@
                     android:id="@+id/imageView22"
                     android:layout_width="184dp"
                     android:layout_height="128dp"
+                    android:clickable="true"
                     android:layout_below="@+id/button3"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/tdee" />
@@ -216,10 +239,16 @@
                     android:textSize="16sp" />
 
 
+
+
+
+
             </RelativeLayout>
 
         </ScrollView>
 
     </RelativeLayout>
+
+
 
 </FrameLayout>

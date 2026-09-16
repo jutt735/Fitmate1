@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".TEEDEE_MAIN">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="242dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tdee" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="88dp"
+        android:textColor="@color/white"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Age"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/EditText9"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="years"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:text="Height"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText9" />
+
+    <EditText
+        android:id="@+id/EditText10"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="cm"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/EditText9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="86dp"
+        android:textColor="@color/white"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Weight"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/EditText11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText10" />
+
+    <EditText
+        android:id="@+id/EditText11"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:text="Kg"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/EditText10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="100dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="Activity Level"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText11" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:entries="@array/activity_levels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/EditText11" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:text="Male"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="129dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Orange"
+        android:fontFamily="sans-serif"
+        android:text="Calculate"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="93dp"
+        android:layout_height="38dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginBottom="50dp"
+        android:text="TDEE  Calculator"
+        android:textColor="@color/Orange"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EditText9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

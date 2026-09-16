@@ -13,9 +13,71 @@
         android:theme="@style/Theme.FitMate"
         tools:targetApi="31">
         <activity
-            android:name=".ChestWorkOut"
+            android:name=".TEEDEE_MAIN"
             android:exported="false" />
-        <!-- Activities from both branches -->
+        <activity
+            android:name=".BMR_MAIN"
+            android:exported="false" />
+        <activity
+            android:name=".diet_plan"
+            android:exported="false" />
+        <activity
+            android:name=".healthy_habits"
+            android:exported="false" />
+        <activity
+            android:name=".Water_Intake"
+            android:exported="false" />
+        <activity
+            android:name=".BMI_Main"
+            android:exported="false" />
+        <activity
+            android:name=".cardio_media"
+            android:exported="false" />
+        <activity
+            android:name=".CArdio_workout"
+            android:exported="false" />
+        <activity
+            android:name=".Legs_MediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".Legs_Workout"
+            android:exported="false" />
+        <activity
+            android:name=".Abs_Workout_MediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".Abs_Workout"
+            android:exported="false" />
+        <activity
+            android:name=".Triceps_Workout_MediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".Triceps_Workout"
+            android:exported="false" />
+        <activity
+            android:name=".Biceps_Media_Player"
+            android:exported="false" />
+        <activity
+            android:name=".Biceps_WorkOut"
+            android:exported="false" />
+        <activity
+            android:name=".ShoulderWorkoutMEdia"
+            android:exported="false" />
+        <activity
+            android:name=".Shoulder_WorkOut"
+            android:exported="false" />
+        <activity
+            android:name=".BackWorkOutMeediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".BackWorkOut"
+            android:exported="false" />
+        <activity
+            android:name=".ChestWorkMediaPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".ChestWorkOut"
+            android:exported="false" /> <!-- Activities from both branches -->
         <activity
             android:name=".WorkOutsActivity"
             android:exported="false" />
